@@ -1,0 +1,31 @@
+.header {
+  background-image: linear-gradient(-180deg, #f53d2d, #f63);
+  color: #fff;
+  height: 120px;
+  font-size: 13px;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.header-navbar__item {
+  margin: 0 5px;
+  position: relative;
+}
+.header-navbar__list {
+  margin: 6px;
+}
+.header-separate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.22);
+  height: 12px;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
