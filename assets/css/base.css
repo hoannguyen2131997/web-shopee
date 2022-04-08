@@ -48,6 +48,21 @@ ul {
   padding: 4px;
 }
 .icon {
-  width: 16px !important;
-  height: 16px !important;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+}
+.ml-4 {
+  margin-left: 4px !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

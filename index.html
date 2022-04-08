@@ -24,35 +24,67 @@
       src="https://kit.fontawesome.com/bc248ebc47.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="app">
       <div class="header">
-        <div class="grid header__navbar">
+        <div class="header__navbar">
           <div class="grid__row header-navbar__list">
-            <a class="header-navbar__item header-separate" href=""
+            <a class="header-nav-a header-navbar__item header-separate" href=""
               >Kênh người bán</a
             >
-            <a class="header-navbar__item header-separate" href=""
+            <a class="header-nav-a header-navbar__item header-separate" href=""
               >Trở thành người bán shopee</a
             >
-            <a class="header-navbar__item header-separate" href=""
-              >Tải ứng dụng</a
-            >
-            <div class="header-navbar__item">
-              Kết nối
-              <i class="icon fa-brands fa-facebook"></i>
-              <i class="icon fa-brands fa-instagram"></i>
+            <div class="header-navbar__item header--display-QRCode header-separate" href="">
+              Tải ứng dụng
+              <div class="header__qr">
+                <img
+                  src="/assets/img/qr_code.png"
+                  class="header__qr-img"
+                  alt="QR Code"
+                />
+                <div class="header__qr-apps">
+                  <a href="" class="header__qr-link">
+                    <img
+                      src="/assets/img/google_play.png"
+                      alt="Google Play"
+                      class="header__qr-download"
+                    />
+                  </a>
+                  <a href="" class="header__qr-link">
+                    <img
+                      src="/assets/img/app_store.png"
+                      alt="App Store"
+                      class="header__qr-download"
+                    />
+                  </a>
+                </div>
+                <a href="" class="header__qr-link">
+                  <img
+                    src="/assets/img//app_gallery.png"
+                    alt="App Gallery"
+                    class="header__qr-download"
+                  />
+                </a>
+              </div>
             </div>
+            <a class="header-nav-a ml-4 none-hover"> Kết nối</a>
+            <i class="ml-4 header-navbar__item icon fa-brands fa-facebook"></i>
+            <i class="ml-4 header-navbar__item icon fa-brands fa-instagram"></i>
           </div>
           <ul class="grid__row header-navbar__list">
             <div class="header-navbar__item">
               <i class="fa-solid fa-bell"></i>
-              <a class="" href="">Thông báo</a>
+              <a class="header-nav-a" href="">Thông báo</a>
             </div>
             <div class="header-navbar__item">
               <i class="fa-solid fa-circle-question"></i>
-              <a class="" href="">Trợ giúp</a>
+              <a class="header-nav-a" href="">Trợ giúp</a>
             </div>
             <div class="header-navbar__item">
               <i class="fa-solid fa-globe"></i>
