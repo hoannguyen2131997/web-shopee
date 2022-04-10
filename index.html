@@ -32,15 +32,15 @@
   <body>
     <div class="app">
       <div class="header">
-        <div class="header__navbar">
+        <div class="grid header__navbar">
           <div class="grid__row header-navbar__list">
             <a class="header-nav-a header-navbar__item header-separate" href=""
               >Kênh người bán</a
             >
-            <a class="header-nav-a header-navbar__item header-separate" href=""
-              >Trở thành người bán shopee</a
+            <div
+              class="header-navbar__item header--display-QRCode header-separate"
+              href=""
             >
-            <div class="header-navbar__item header--display-QRCode header-separate" href="">
               Tải ứng dụng
               <div class="header__qr">
                 <img
@@ -78,21 +78,59 @@
             <i class="ml-4 header-navbar__item icon fa-brands fa-instagram"></i>
           </div>
           <ul class="grid__row header-navbar__list">
-            <div class="header-navbar__item">
+            <div class="header--display-notify header-navbar__item ">
               <i class="fa-solid fa-bell"></i>
               <a class="header-nav-a" href="">Thông báo</a>
+              <div class="header__notify">
+                <p class="notify__title">Thông báo mới nhận</p>
+                <div class="notify__body">
+                  <div class="notify__body__item">
+                    <img src="/assets/img/gitf.png" class="pd-4 notify-body-item__icon"></img>
+                    <div class="notify-body-item__text">
+                      <h3>Tặng bạn mã freeship 40k</h3>
+                      <p>Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k</p>
+                    </div>
+                  </div>
+                  <div class="notify__body__item">
+                    <img src="/assets/img/gitf.png" class="pd-4 notify-body-item__icon"></img>
+                    <div class="notify-body-item__text">
+                      <h3>Tặng bạn mã freeship 40k</h3>
+                      <p>Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k</p>
+                    </div>
+                  </div>
+                  <div class="notify__body__item">
+                    <img src="/assets/img/gitf.png" class="pd-4 notify-body-item__icon"></img>
+                    <div class="notify-body-item__text">
+                      <h3>Tặng bạn mã freeship 40k</h3>
+                      <p>Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="show-all">Xem tất cả</p>
+              </div>
             </div>
             <div class="header-navbar__item">
               <i class="fa-solid fa-circle-question"></i>
               <a class="header-nav-a" href="">Trợ giúp</a>
             </div>
-            <div class="header-navbar__item">
+            <div class="show-sub-selected header-navbar__item">
               <i class="fa-solid fa-globe"></i>
               Tiếng Việt
               <i class="fa-solid fa-angle-down"></i>
+              <div class="sub-selected">
+                <p class="sub-selected__text">Tiếng Việt</p>
+                <p class="sub-selected__text">English</p>
+              </div>
             </div>
-            <a class="header-navbar__item header-separate">Đăng ký</a>
-            <a class="header-navbar__item">Đăng nhập</a>
+            <div class="--show-user-info header-navbar__item header-navbar__user">
+              <img src="/assets/img/user_avartar.png" class="br-50 header-navbar__avartar_user"></img>
+              <p class="header-nav-a header-navbar__name_user">Hoàn Nguyễn</p>
+              <div class="user-info">
+                <p class="user-info__text">Tài khoản của tôi</p>
+                <p class="user-info__text">Đơn mua</p>
+                <p class="user-info__text">Đăng xuất</p>
+              </div>
+            </div>
           </ul>
         </div>
       </div>

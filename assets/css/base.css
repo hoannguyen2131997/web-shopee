@@ -12,7 +12,7 @@ html {
   /* 16px */
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
   box-sizing: border-box;
 }
 
@@ -21,9 +21,10 @@ p {
 }
 
 .grid {
-  width: 75em;
+  width: 93em;
   max-width: 100%;
   margin: 0 auto;
+  padding: 4px;
 }
 
 .grid__full-width {
@@ -65,4 +66,8 @@ ul {
   to {
     opacity: 1;
   }
+}
+
+.br-50 {
+  border-radius: 50% !important;
 }

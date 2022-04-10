@@ -12,10 +12,13 @@
   color: #fff;
   text-decoration: none;
 }
+
+.header-navbar__item {
+  margin: 0 8px;
+}
 .header-nav-a, 
 .header-navbar__item {
   position: relative;
-  margin: 0 5px;
 }
 
 .header-nav-a:hover,
@@ -44,6 +47,17 @@
   width: 55px;
 }
 
+.header-navbar__user {
+  display: flex;
+}
+.header-navbar__avartar_user {
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+}
+.header-navbar__name_user {
+  margin: 0;
+}
 /* QR Code */
 .header__qr {
   width: 186px;
@@ -93,4 +107,153 @@
   width: 100%;
   height: 20px;
   content: "";
+}
+
+/* notification */
+.header__notify {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 150%; 
+  right: 0;
+  width: 450px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.header__notify::before {
+  position: absolute;
+  display: block;
+  top: -6%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: "";
+}
+
+.notify-body-item__icon {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+.notify__title {
+  opacity: 0.5;
+}
+
+.notify__body {
+ 
+}
+
+.notify__body__item {
+  display: flex;
+  background-color: #fff7fb;
+}
+.notify__body__item:hover {
+  background-color: #f2ebf5;
+}
+
+.notify-body-item__text {
+ padding: 4px;
+}
+.notify-body-item__text h3 {
+ margin: 0;
+ padding: 8px 0;
+ opacity: 0.8;
+ font-weight: 500;
+}
+
+.notify-body-item__text p {
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.header__notify .show-all {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 35px;
+}
+
+.header--display-notify:hover .header__notify {
+  display: flex;
+}
+
+/* sub (Vietnamese, English) */
+.sub-selected {
+  background-color: #fff;
+  color: #333;
+  position: absolute;
+  right: 0;
+  top: 150%;
+  width: 160px;
+  padding: 6px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 82px;
+  border-radius: 2px;
+}
+.sub-selected::before {
+  position: absolute;
+  display: block;
+  top: -19%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: "";
+}
+
+.sub-selected__text {
+  margin: 0;
+}
+
+.sub-selected__text:hover {
+  color: rgb(240, 73, 6);
+}
+
+.show-sub-selected:hover .sub-selected {
+  display: flex;
+}
+
+/* user info */
+.header-navbar__item .user-info {
+  position: absolute;
+  background-color: #fff;
+  color: #000;            
+  right: 0;
+  top: 150%;
+  width: 160px;
+  padding: 8px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 120px;
+  border-radius: 2px;
+}
+
+.user-info::before {
+  position: absolute;
+  display: block;
+  top: -14%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: "";
+}
+
+.header-navbar__item .user-info__text {
+  margin: 0;
+}
+
+.user-info__text:hover {
+  color: rgb(47 168 17);
+}
+
+.--show-user-info:hover .user-info{
+  display: flex;
 }
