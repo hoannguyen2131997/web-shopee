@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .header-nav-a {
   color: #fff;
   text-decoration: none;
@@ -16,23 +17,48 @@
 .header-navbar__item {
   margin: 0 8px;
 }
+
 .header-nav-a,
 .header-navbar__item {
   position: relative;
 }
 
+.header-navbar__item__register {
+  margin-right: 20px;
+  position: relative;
+}
+
+.header-navbar__item__register::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 1px solid var(--white-color);
+  height: 12px;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-navbar__item__login {
+}
+
+.header-navbar__item__register:hover,
+.header-navbar__item__login:hover,
 .header-nav-a:hover,
 .header-navbar__item:hover {
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
+
 .none-hover:hover {
   color: #fff !important;
   cursor: default !important;
 }
+
 .header-navbar__list {
   margin: 6px;
 }
+
 .header-separate::after {
   content: "";
   display: block;
@@ -43,6 +69,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .header .icon-shopee {
   width: 55px;
 }
@@ -50,14 +77,17 @@
 .header-navbar__user {
   display: flex;
 }
+
 .header-navbar__avartar_user {
   width: 20px;
   height: 20px;
   margin: 0 4px;
 }
+
 .header-navbar__name_user {
   margin: 0;
 }
+
 /* QR Code */
 .header__qr {
   width: 186px;
@@ -398,25 +428,25 @@
 .auth-form {
   background-color: var(--white-color);
 }
-.header__register-form {
+.header__auth-form {
   padding: 2.2rem 3rem;
   min-height: 5rem;
+  margin-top: 0;
 }
 
-.header__register-form p {
-  font-size: 2em;
+.auth-text {
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
 
-.body__register-form {
+.body__auth-form {
   padding: 0 3rem;
   display: flex;
   flex-direction: column;
 }
 
 ._sv {
-  margin-top: 32px;
   display: flex;
   align-items: center;
   opacity: 0.3;
@@ -440,6 +470,11 @@
   margin: 9px 5px 0 0;
 }
 
+.fa-apple.icon-register {
+  font-size: 2.6rem;
+  margin: 5px 5px 0 0;
+}
+
 .different__register__button {
   display: flex;
   justify-content: space-between;
@@ -459,21 +494,91 @@
 }
 
 .body__register-form__login {
-  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-} 
+  width: 100%;
+}
 
 .esng {
   white-space: pre;
-  color: rgba(0,0,0,.26);
-  position: relative;
-  top: -1.5rem;
-  left: -2.2rem;
+  color: rgba(0, 0, 0, 0.26);
+  font-size: 1.4rem;
+}
+
+.block_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
 }
 
 .footer__register-form {
-  margin-top: 3rem;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* login form */
+.header__login-form {
+  display: flex;
+  flex-direction: center;
+}
+
+.auth-form__qr-text {
+  font-size: 1.4rem;
+  color: #ffbf00;
+  padding: 1.1rem 1.4rem;
+  border: 2px solid #ffbf00;
+  border-radius: 2px;
+  font-weight: 700;
+  position: relative;
+  margin-right: 1.4rem;
+}
+
+.auth-form__qr-text:after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg) translateX(-50%);
+  border-top: 2px solid #ffbf00;
+  border-right: 2px solid #ffbf00;
+  top: 50%;
+  right: -0.95rem;
+  background-color: #fefaec;
+}
+
+.login-title-text {
+  line-height: 40px;
+  margin-right: 1.2rem;
+}
+
+.auth-form__qr-icon.fa-qrcode {
+  font-size: 40px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.auth-form__qr-icon.fa-qrcode:after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 2.3rem;
+  background-color: #fefaec;
+  top: 31.1px;
+  right: 11px;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.login-form__support {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-form__support p {
+  color: #5e74bf;
+  font-size: 1.2rem;
 }

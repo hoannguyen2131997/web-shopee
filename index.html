@@ -56,8 +56,8 @@
                 </a>
             </div>
         </div>
-        <div class="header-nav-a ml-4">
-            <a class="none-hover"> Kết nối</a>
+        <div class="header-nav-a ml-4 mt-1">
+            <a class="ml-4 none-hover"> Kết nối</a>
             <i class="ml-4 header-navbar__item icon fa-brands fa-facebook"></i>
             <i class="ml-4 header-navbar__item icon fa-brands fa-instagram"></i>
         </div>
@@ -120,7 +120,9 @@
                 <p class="sub-selected__text">English</p>
             </div>
         </div>
-        <div class="--show-user-info header-navbar__item header-navbar__user">
+        <div class="header-navbar__item__register">Đăng ký</div>
+        <div class="header-navbar__item__login">Đăng nhập</div>
+        <!-- <div class="--show-user-info header-navbar__item header-navbar__user">
             <img src="/assets/img/user_avartar.png" class="br-50 header-navbar__avartar_user"></img>
             <p class="header-nav-a header-navbar__name_user">Hoàn Nguyễn</p>
             <div class="user-info">
@@ -128,7 +130,7 @@
                 <p class="user-info__text">Đơn mua</p>
                 <p class="user-info__text">Đăng xuất</p>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     <!-- <div class="grid header__search">
@@ -152,55 +154,19 @@
     <div class="container"></div>
     <div class="footer"></div>
     </div>
-    <div class="model">
+    <!-- <div class="model">
         <div class="model__overlay"></div>
         <div class="model__body">
-            <!-- <div class="auth-form">
-                <div class="header__register-form">
-                    <p>Đăng ký</p>
-                </div>
-
-                <div class="body__register-form">
-                    <input class="mt-0 input" type="text" placeholder="Số điện thoại">
-                    <button class="mt-32 btn btn--primary btn-size-m">Tiếp theo</button>
-                    <div class="_sv">
-                        <div class="_svg"></div>
-                        <span class="_svgg">HOẶC</span>
-                        <div class="_svg"></div>
-                    </div>
-                    <div class="different__register__button">
-                        <div class="btn grid_sv btn-size-m">
-                            <img src="/assets/img/google-icon.png" alt="" class="icon-register"></img>
-                            Google
-                        </div>
-                        <div class="btn grid_sv btn-size-m">
-                            <img src="/assets/img/icon-facebook.jpg" alt="" class="icon-register"></img>
-                            Facebook
-                        </div>
-                    </div>
-                    <div class="body__provision">
-                        Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-                        <a class="body__provision-text" href="">Điều khoản dịch vụ</a> &
-                        <a class="body__provision-text" href="">Chính sách bảo mật</a>
-                    </div>
-                </div>
-
-                <div class="footer__register-form">
-                    <div class="esng body__register-form__login  ">
-                        Bạn đã có tài khoản?
-                        <a class="body__provision-text" href=""> Đăng nhập</a>
-                    </div>
-                </div>
-            </div> -->
+       
             <div class="auth-form">
-                <div class="header__register-form">
-                    <p>Đăng ký</p>
+                <div class="header__auth-form">
+                    <div class="auth-text">Đăng ký</div>
                 </div>
 
-                <div class="body__register-form">
+                <div class="body__auth-form">
                     <input class="mt-0 input" type="text" placeholder="Số điện thoại">
                     <button class="mt-32 btn btn--primary btn-size-m">Tiếp theo</button>
-                    <div class="_sv">
+                    <div class="_sv mt-32">
                         <div class="_svg"></div>
                         <span class="_svgg">HOẶC</span>
                         <div class="_svg"></div>
@@ -223,14 +189,59 @@
                 </div>
 
                 <div class="footer__register-form">
-                    <div class="esng body__register-form__login  ">
-                        Bạn đã có tài khoản?
+                    <div class="esng body__register-form__login">
+                        <span>Bạn đã có tài khoản?</span>
                         <a class="body__provision-text" href=""> Đăng nhập</a>
                     </div>
                 </div>
             </div>
+
+            <div class="auth-form">
+                <div class="header__auth-form header__login-form">
+                    <div class="auth-text login-title-text">Đăng nhập</div>
+                    <div class="auth-form__qr-text">Đăng nhập với mã QR</div>
+                    <i class="fas fa-qrcode auth-form__qr-icon"></i>
+                </div>
+
+                <div class="body__auth-form">
+                    <input class="mt-0 input" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                    <input class="mt-0 input" type="text" placeholder="Mật khẩu">
+                    <button class="mt-32 btn btn--primary btn-size-m">Đăng nhập</button>
+
+                    <div class="login-form__support mt-8">
+                        <p>Quên mật khẩu</p>
+                        <p>Đăng nhập với SMS</p>
+                    </div>   
+                    <div class="_sv mt-12">
+                        <div class="_svg"></div>
+                        <span class="_svgg">HOẶC</span>
+                        <div class="_svg"></div>
+                    </div>
+                    <div class="different__register__button">
+                        <div class="btn grid_sv btn-size-m">
+                            <img src="/assets/img/google-icon.png" alt="" class="icon-register"></img>
+                            Google
+                        </div>
+                        <div class="btn grid_sv btn-size-m">
+                            <img src="/assets/img/icon-facebook.jpg" alt="" class="icon-register"></img>
+                            Facebook
+                        </div>
+                        <div class="btn grid_sv btn-size-m">
+                            <i class="fa-brands fa-apple icon-register"></i>
+                            Apple
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__register-form">
+                    <div class="esng body__register-form__login">
+                        <span>Bạn mới biết đến Shopee?</span>
+                        <a class="body__provision-text" href=""> Đăng ký</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
