@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/bc248ebc47.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/bc248ebc47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
     <div class="app">
-      <div class="header">
-        <div class="grid header__navbar">
-          <div class="grid__row header-navbar__list">
-            <a class="header-nav-a header-navbar__item header-separate" href=""
-              >Kênh người bán</a
+        <div class="header">
+            <!-- header navbar -->
+            <div class="grid header__navbar">
+                <div class="grid__row header-navbar__list">
+                    <!-- header navbar right -->
+                    <a class="header-nav-a header-navbar__item header-separate" href="">Kênh người bán</a
             >
+
+            <!-- QR code -->
             <div
               class="header-navbar__item header--display-QRCode header-separate"
               href=""
@@ -56,86 +47,190 @@
                       class="header__qr-download"
                     />
                   </a>
-                  <a href="" class="header__qr-link">
-                    <img
-                      src="/assets/img/app_store.png"
-                      alt="App Store"
-                      class="header__qr-download"
-                    />
-                  </a>
+                    <a href="" class="header__qr-link">
+                        <img src="/assets/img/app_store.png" alt="App Store" class="header__qr-download" />
+                    </a>
                 </div>
                 <a href="" class="header__qr-link">
-                  <img
-                    src="/assets/img//app_gallery.png"
-                    alt="App Gallery"
-                    class="header__qr-download"
-                  />
+                    <img src="/assets/img//app_gallery.png" alt="App Gallery" class="header__qr-download" />
                 </a>
-              </div>
             </div>
-            <a class="header-nav-a ml-4 none-hover"> Kết nối</a>
+        </div>
+        <div class="header-nav-a ml-4">
+            <a class="none-hover"> Kết nối</a>
             <i class="ml-4 header-navbar__item icon fa-brands fa-facebook"></i>
             <i class="ml-4 header-navbar__item icon fa-brands fa-instagram"></i>
-          </div>
-          <ul class="grid__row header-navbar__list">
-            <div class="header--display-notify header-navbar__item ">
-              <i class="fa-solid fa-bell"></i>
-              <a class="header-nav-a" href="">Thông báo</a>
-              <div class="header__notify">
-                <p class="notify__title">Thông báo mới nhận</p>
-                <div class="notify__body">
-                  <div class="notify__body__item">
-                    <img src="/assets/img/gitf.png" class="pd-4 notify-body-item__icon"></img>
-                    <div class="notify-body-item__text">
-                      <h3>Tặng bạn mã freeship 40k</h3>
-                      <p>Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k</p>
-                    </div>
-                  </div>
-                  <div class="notify__body__item">
-                    <img src="/assets/img/gitf.png" class="pd-4 notify-body-item__icon"></img>
-                    <div class="notify-body-item__text">
-                      <h3>Tặng bạn mã freeship 40k</h3>
-                      <p>Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k</p>
-                    </div>
-                  </div>
-                  <div class="notify__body__item">
-                    <img src="/assets/img/gitf.png" class="pd-4 notify-body-item__icon"></img>
-                    <div class="notify-body-item__text">
-                      <h3>Tặng bạn mã freeship 40k</h3>
-                      <p>Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k Tặng bạn mã freeship 40k</p>
-                    </div>
-                  </div>
-                </div>
-                <p class="show-all">Xem tất cả</p>
-              </div>
+        </div>
+    </div>
+
+    <!-- header navbar left -->
+    <div class="grid__row header-navbar__list">
+        <!-- notify -->
+        <div class="header--display-notify header-navbar__item ">
+            <i class="fa-solid fa-bell"></i>
+            <a class="header-nav-a" href="">Thông báo</a>
+            <!-- notify content-->
+            <div class="header__notify">
+                <header class="header__notify-title">
+                    <h3>Thông báo mới nhận</h3>
+                </header>
+                <ul class="header__notify-list">
+                    <li class="header__notify-item header__notify-item--viewed">
+                        <a href="" class="header__notify-link">
+                            <img src="/assets/img/gitf.png" class="header__notify-icon"></img>
+                            <div class="header__notify-info">
+                                <span class="header__notify-name">Create a Responsive Personal Portfolio Website Design using HTML CSS and JavaScript</span>
+                                <span class="header__notify-description">Tặng bạn mã freeship 40k tặng bạn mã freeship 40k tặng bạn mã freeship 40k</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header__notify-item header__notify-item--viewed">
+                        <a href="" class="header__notify-link">
+                            <img src="/assets/img/gitf.png" class="header__notify-icon"></img>
+                            <div class="header__notify-info">
+                                <span class="header__notify-name">Tặng bạn mã freeship 40k</span>
+                                <span class="header__notify-description">Tặng bạn mã freeship 40k tặng bạn mã freeship 40k tặng bạn mã freeship 40k</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header__notify-item">
+                        <a href="" class="header__notify-link header__notify-item--viewed">
+                            <img src="/assets/img/gitf.png" class="header__notify-icon"></img>
+                            <div class="header__notify-info">
+                                <span class="header__notify-name">Tặng bạn mã freeship 40k</span>
+                                <span class="header__notify-description">Tặng bạn mã freeship 40k tặng bạn mã freeship 40k tặng bạn mã freeship 40k</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <footer class="show-all">
+                    <a href="" class="show-all-btn">Xem tất cả</a>
+                </footer>
             </div>
-            <div class="header-navbar__item">
-              <i class="fa-solid fa-circle-question"></i>
-              <a class="header-nav-a" href="">Trợ giúp</a>
-            </div>
-            <div class="show-sub-selected header-navbar__item">
-              <i class="fa-solid fa-globe"></i>
-              Tiếng Việt
-              <i class="fa-solid fa-angle-down"></i>
-              <div class="sub-selected">
+        </div>
+        <div class="header-navbar__item">
+            <i class="fa-solid fa-circle-question"></i>
+            <a class="header-nav-a" href="">Trợ giúp</a>
+        </div>
+        <div class="show-sub-selected header-navbar__item">
+            <i class="fa-solid fa-globe"></i> Tiếng Việt
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="sub-selected">
                 <p class="sub-selected__text">Tiếng Việt</p>
                 <p class="sub-selected__text">English</p>
-              </div>
             </div>
-            <div class="--show-user-info header-navbar__item header-navbar__user">
-              <img src="/assets/img/user_avartar.png" class="br-50 header-navbar__avartar_user"></img>
-              <p class="header-nav-a header-navbar__name_user">Hoàn Nguyễn</p>
-              <div class="user-info">
+        </div>
+        <div class="--show-user-info header-navbar__item header-navbar__user">
+            <img src="/assets/img/user_avartar.png" class="br-50 header-navbar__avartar_user"></img>
+            <p class="header-nav-a header-navbar__name_user">Hoàn Nguyễn</p>
+            <div class="user-info">
                 <p class="user-info__text">Tài khoản của tôi</p>
                 <p class="user-info__text">Đơn mua</p>
                 <p class="user-info__text">Đăng xuất</p>
-              </div>
             </div>
-          </ul>
         </div>
-      </div>
-      <div class="container"></div>
-      <div class="footer"></div>
     </div>
-  </body>
+    </div>
+    <!-- <div class="grid header__search">
+          <div class="shopee-card">
+            <img src="/assets/img/logo-shopee-256.png" alt="Logo Shopee" class="shopee-card__logo">
+            <p class="shopee-card__text">Shopee</p>
+        </div>
+        <div class="header__search__bar">
+          <div class="header__search__main">
+            <form class="header__search__form">
+              <input aria-label="MUA 1 ĐƯỢC 3  QUÀ 22 TRIỆU" class="header-search-form__input" maxlength="128" placeholder="MUA 1 ĐƯỢC 3  QUÀ 22 TRIỆU" autocomplete="off" value="">
+            </form>
+          </div>
+          <div class="header__search__button">
+            <i class="fas fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="shop-cart"></div>
+        </div> -->
+    </div>
+    <div class="container"></div>
+    <div class="footer"></div>
+    </div>
+    <div class="model">
+        <div class="model__overlay"></div>
+        <div class="model__body">
+            <!-- <div class="auth-form">
+                <div class="header__register-form">
+                    <p>Đăng ký</p>
+                </div>
+
+                <div class="body__register-form">
+                    <input class="mt-0 input" type="text" placeholder="Số điện thoại">
+                    <button class="mt-32 btn btn--primary btn-size-m">Tiếp theo</button>
+                    <div class="_sv">
+                        <div class="_svg"></div>
+                        <span class="_svgg">HOẶC</span>
+                        <div class="_svg"></div>
+                    </div>
+                    <div class="different__register__button">
+                        <div class="btn grid_sv btn-size-m">
+                            <img src="/assets/img/google-icon.png" alt="" class="icon-register"></img>
+                            Google
+                        </div>
+                        <div class="btn grid_sv btn-size-m">
+                            <img src="/assets/img/icon-facebook.jpg" alt="" class="icon-register"></img>
+                            Facebook
+                        </div>
+                    </div>
+                    <div class="body__provision">
+                        Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                        <a class="body__provision-text" href="">Điều khoản dịch vụ</a> &
+                        <a class="body__provision-text" href="">Chính sách bảo mật</a>
+                    </div>
+                </div>
+
+                <div class="footer__register-form">
+                    <div class="esng body__register-form__login  ">
+                        Bạn đã có tài khoản?
+                        <a class="body__provision-text" href=""> Đăng nhập</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="auth-form">
+                <div class="header__register-form">
+                    <p>Đăng ký</p>
+                </div>
+
+                <div class="body__register-form">
+                    <input class="mt-0 input" type="text" placeholder="Số điện thoại">
+                    <button class="mt-32 btn btn--primary btn-size-m">Tiếp theo</button>
+                    <div class="_sv">
+                        <div class="_svg"></div>
+                        <span class="_svgg">HOẶC</span>
+                        <div class="_svg"></div>
+                    </div>
+                    <div class="different__register__button">
+                        <div class="btn grid_sv btn-size-m">
+                            <img src="/assets/img/google-icon.png" alt="" class="icon-register"></img>
+                            Google
+                        </div>
+                        <div class="btn grid_sv btn-size-m">
+                            <img src="/assets/img/icon-facebook.jpg" alt="" class="icon-register"></img>
+                            Facebook
+                        </div>
+                    </div>
+                    <div class="body__provision">
+                        Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                        <a class="body__provision-text" href="">Điều khoản dịch vụ</a> &
+                        <a class="body__provision-text" href="">Chính sách bảo mật</a>
+                    </div>
+                </div>
+
+                <div class="footer__register-form">
+                    <div class="esng body__register-form__login  ">
+                        Bạn đã có tài khoản?
+                        <a class="body__provision-text" href=""> Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
