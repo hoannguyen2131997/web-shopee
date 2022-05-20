@@ -25,6 +25,8 @@ p {
   font-size: 1.6rem;
 }
 
+/* Responsive */
+
 .grid {
   width: 93em;
   max-width: 100%;
@@ -38,7 +40,7 @@ p {
 
 .grid__row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .header__border-right {
@@ -58,12 +60,15 @@ ul {
 .icon {
   width: 16px;
   height: 16px;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
 }
 
-.ml-4 {
+.container {
   margin-left: 4px !important;
+  height: 1200px;
+
 }
 
 .mt-0 {
@@ -85,12 +90,37 @@ ul {
   margin-top: 12px !important;
 }
 
+.mr-8 {
+  margin-right: 8px!important;
+}
+
+.ml-6 {
+  margin-left: 6px!important;
+}
+
+.ml-4 {
+  margin-left: 4px!important;
+}
+
+.pt-12 {
+  padding-top: 12px!important;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
   }
 }
 
@@ -105,6 +135,7 @@ ul {
   left: 0;
   bottom: 0;
   display: flex;
+  animation: fadeIn linear .1s;
 }
 
 .model__overlay {
@@ -115,11 +146,14 @@ ul {
 }
 
 .model__body {
+  --growth-from: 0.7;
+  --growth-to: 1;
   width: 400px;
   box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
   margin: auto;
   z-index: 1;
   border-radius: 5px;
+  animation: growth linear .1s;
 }
 
 .model__inner {
@@ -187,4 +221,21 @@ ul {
 
 .input + .input {
   margin-top: 25px;
+}
+
+/* text */
+.text-primary {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.text-normal {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+/* hover */
+.none-hover:hover {
+  color: var(--white-color);
+  cursor: default;
 }
