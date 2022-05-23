@@ -21,7 +21,7 @@
     <div class="app">
         <div class="header">
             <!-- header navbar -->
-            <div class="grid header__navbar">
+            <div class="grid header__navbar pd-4">
                 <div class="grid__row header-navbar__list">
                     <!-- header navbar right -->
                     <a class="header-nav-a header-navbar__item header-separate" href="">Kênh người bán</a
@@ -193,14 +193,14 @@
 
                 <div class="mt-8">
                     <div class="search__list-item">
-                        <a href="" class="header-nav-a mr-8">Váy</a>
-                        <a href="" class="header-nav-a mr-8">Dép Nữ</a>
-                        <a href="" class="header-nav-a mr-8">Túi Xách Nữ</a>
-                        <a href="" class="header-nav-a mr-8">Dép</a>
-                        <a href="" class="header-nav-a mr-8">Áo Croptop</a>
-                        <a href="" class="header-nav-a mr-8">Áo Phông</a>
-                        <a href="" class="header-nav-a mr-8">Chân Váy</a>
-                        <a href="" class="header-nav-a mr-8">Kem Chống Nắng</a>
+                        <a href="" class="mr-8">Váy</a>
+                        <a href="" class="mr-8">Dép Nữ</a>
+                        <a href="" class="mr-8">Túi Xách Nữ</a>
+                        <a href="" class="mr-8">Dép</a>
+                        <a href="" class="mr-8">Áo Croptop</a>
+                        <a href="" class="mr-8">Áo Phông</a>
+                        <a href="" class="mr-8">Chân Váy</a>
+                        <a href="" class="mr-8">Kem Chống Nắng</a>
                     </div>
                 </div>
             </div>
@@ -245,35 +245,73 @@
         
     </div>
     </div>
-    <div class="container">
-        <nav class="category">
-            <h3 class="category__heading">
-                <i class="fa-solid fa-list-radio"></i>
-                Danh mục
-            </h3>
+    <div class="app__container">
+        <div class="grid">    
+            <div class="grid__row">
+                <div class="grid__column-2">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            <i class="fas fa-list"></i>
+                            Bộ lọc tìm kiếm
+                        </h3>
+            
+                        <ul class="category-list">
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Máy Tính & Laptop</a>
+                            </li>
+            
+                            <li class="category-item">
+                                <a href="#" class="category-item__link category-item__link--active">Máy Tính Bàn</a>
+                            </li>
+            
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Màn Hình</a>
+                            </li>
+            
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Linh Kiện Máy Tính</a>
+                            </li>
+            
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Thiết Bị Lưu Trữ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid__column-10">
+                    <div class="home-title">
+                        <div class="home-title__selecte">
+                            <span class="home-title__selecte__text ">Sắp xếp theo</span>
+                            <button class="btn btn-size-s btn--normal home-title__selecte__item border-shadow--light">Liên quan</button>
+                            <button class="btn btn--primary btn--normal btn-size-s home-title__selecte__item border-shadow--light">Mới nhất</button>
+                            <button class="btn btn-size-s btn--normal home-title__selecte__item border-shadow--light">Bán chạy</button>
+                            <button class="btn btn-size-m btn--normal pd-12 border-shadow--light home-title__selecte__item">
+                                <span>Giá</span>
+                                <i class="fa-solid fa-angle-down"></i>
 
-            <ul class="category-list">
-                <li class="category-item">
-                    <a href="#" class="category-item__link category-item__link--active">Máy Tính & Laptop</a>
-                </li>
-
-                <li class="category-item">
-                    <a href="#" class="category-item__link">Máy Tính Bàn</a>
-                </li>
-
-                <li class="category-item">
-                    <a href="#" class="category-item__link">Màn Hình</a>
-                </li>
-
-                <li class="category-item">
-                    <a href="#" class="category-item__link">Linh Kiện Máy Tính</a>
-                </li>
-
-                <li class="category-item">
-                    <a href="#" class="category-item__link">Thiết Bị Lưu Trữ</a>
-                </li>
-            </ul>
-        </nav>
+                                <div class="home-title__selecte__price border-shadow--light">
+                                    <span>Giá: thấp đến cao</span>
+                                    <span>Giá: cao đến thấp</span>
+                                </div>
+                            </button>
+                        </div>
+                       <div class="home-title__mini-page-controller">
+                        <div class="home-title__mini-page-controller__page-number">
+                            <span>1</span>
+                            <span>/</span>
+                            <span>100</span>
+                        </div>
+                           <div class="btn btn-size-xs btn--disabled home-title__mini-page-controller__prev-btn border-shadow--none">
+                                <i class="fa-solid fa-angle-left"></i>
+                           </div>
+                           <div class="btn btn-size-xs home-title__mini-page-controller__next-btn border-shadow--none">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer"></div>
     </div>
@@ -288,18 +326,18 @@
 
                 <div class="body__auth-form">
                     <input class="mt-0 input" type="text" placeholder="Số điện thoại">
-                    <button class="mt-32 btn btn--primary btn-size-m">Tiếp theo</button>
+                    <button class="mt-32 btn btn--primary btn-full-width">Tiếp theo</button>
                     <div class="_sv mt-32">
                         <div class="_svg"></div>
                         <span class="_svgg">HOẶC</span>
                         <div class="_svg"></div>
                     </div>
                     <div class="different__register__button">
-                        <div class="btn grid_sv btn-size-m">
+                        <div class="btn grid_sv btn-full-width">
                             <img src="/assets/img/google-icon.png" alt="" class="icon-register"></img>
                             Google
                         </div>
-                        <div class="btn grid_sv btn-size-m">
+                        <div class="btn grid_sv btn-full-width">
                             <img src="/assets/img/icon-facebook.jpg" alt="" class="icon-register"></img>
                             Facebook
                         </div>
@@ -329,7 +367,7 @@
                 <div class="body__auth-form">
                     <input class="mt-0 input" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
                     <input class="mt-0 input" type="text" placeholder="Mật khẩu">
-                    <button class="mt-32 btn btn--primary btn-size-m">Đăng nhập</button>
+                    <button class="mt-32 btn btn--primary btn-full-width">Đăng nhập</button>
 
                     <div class="login-form__support mt-8">
                         <p>Quên mật khẩu</p>
@@ -341,15 +379,15 @@
                         <div class="_svg"></div>
                     </div>
                     <div class="different__register__button">
-                        <div class="btn grid_sv btn-size-m">
+                        <div class="btn grid_sv btn-full-width">
                             <img src="/assets/img/google-icon.png" alt="" class="icon-register"></img>
                             Google
                         </div>
-                        <div class="btn grid_sv btn-size-m">
+                        <div class="btn grid_sv btn-full-width">
                             <img src="/assets/img/icon-facebook.jpg" alt="" class="icon-register"></img>
                             Facebook
                         </div>
-                        <div class="btn grid_sv btn-size-m">
+                        <div class="btn grid_sv btn-full-width">
                             <i class="fa-brands fa-apple icon-register"></i>
                             Apple
                         </div>
