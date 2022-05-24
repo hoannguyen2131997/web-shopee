@@ -1021,3 +1021,130 @@
 .home-title__selecte__price span:hover {
   color: var(--primary-color);
 }
+
+/* Home page */
+.home-product {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding: 8px 4px 36px;
+}
+
+.home-product__item {
+  height: 336px;
+  width: 190px;
+  background-color: var(--white-color);
+  border: 1px solid #d7d7d7;
+}
+
+.home-product__item img {
+  height: 50%;
+  width: 100%;
+  border: 0;
+}
+
+.home-product-item__title {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 0 6px;
+  height: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.4;
+}
+
+.home-product-item__offer {
+  display: block;
+  margin-top: 4px;
+  padding: 0 6px;
+}
+
+.home-product-item-offer__discount {
+  color: red;
+  font-size: 1rem;
+  border: 1px solid red;
+  display: inline-block;
+  padding: 0 2px;
+  height: 10%;
+}  
+
+.home-product-item-offer__voucher {
+  display: inline-block;
+  color: var(--white-color);
+  background-color: rgb(246, 145, 19);
+  margin-left: 6px;
+} 
+
+.home-product-item__price {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 4px;
+  line-height: 1.6rem;
+} 
+
+.home-product-item__price__disable {
+  color: #455561;
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  width: 30%;
+  margin-right: 4px;   
+  line-height: 1.6rem;
+}
+
+.home-product-item__price__active {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  width: 30%;  
+  line-height: 1.6rem;
+}
+
+.home-product-item__price__ship {
+  width: 20%; 
+  margin-bottom: 6px;
+}
+
+.home-product-item__price__change {
+  max-width: calc(100% - 22px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.home-product-item__statistical {
+  display: flex;
+  margin: 12px 6px 0;
+
+}
+
+.home-product-item__statistical__rating {
+
+}
+
+.home-product-item__statistical__sold {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+  color: var(--black-color);
+  margin-left: 8px;
+  flex: 1;
+}
+
+.home-product-item__statistical__rating .fa-star {
+  color: #ffce3d;
+}
+
+.home-product-item__address {
+  color: var(--text-color);
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 6px;
+  font-size: 1.2rem;
+}
