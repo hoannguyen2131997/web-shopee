@@ -295,6 +295,10 @@ ul {
 .text-normal {
   font-size: 1.4rem;
   color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 12px;
 }
 
 /* hover */
