@@ -3,6 +3,7 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
+  --star-color: #ffce3d;
 }
 
 * {
@@ -45,8 +46,6 @@ p {
 }
 
 .grid__column-2-12 {
-  padding-left: 12px;
-  padding-right: 12px;
   width: 16.6667%;
 }
 
