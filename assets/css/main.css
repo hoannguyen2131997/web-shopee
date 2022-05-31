@@ -1063,7 +1063,7 @@
 .home-product {
   display: flex;
   height: auto;
-  padding: 8px 4px 36px;
+  margin: 8px -10px 36px;
   flex-wrap: wrap;
 }
 
@@ -1071,11 +1071,9 @@
   display: block;
   text-decoration: none;
   height: 340px;
-  width: 190px;
+  width: 100%;
   background-color: var(--white-color);
   position: relative;
-  margin-left: 0.7rem;
-  margin-bottom: 0.7rem;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   box-shadow: 0 0.1rem 0.2rem 0 rgb(0 0 0 / 10%);
@@ -1301,4 +1299,217 @@
   width: 2rem;
   fill: rgba(0,0,0,.5);
   stroke: none;
+}
+
+/* Home page controller */
+
+.home-page-contronller {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.home-page-contronller i {
+  color: #b5b5b5;
+}
+
+.home-page-contronller__list {
+  display: flex;
+  margin: 0 16px;
+}
+
+.home-page-contronller__list_item {
+  margin: 0 15px;
+  color: #b5b5b5;
+  font-weight: 300;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  border-top: 4px solid var(--primary-color);
+  padding-top: 32px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #8a8287;
+  font-size: 1.2rem;
+}
+
+.footer h3 {
+  color: #a19483;
+  font-size: 1.2rem;
+}
+
+.footer li {
+  margin-bottom: 12px;
+}
+
+.footer__background {
+  background-image: url(../img/logo.png);
+}
+
+.footer__background__png {
+  background-size: 1463.6363636363637% 769.5652173913044%;
+  background-position: 51.2% 38.311688311688314%;
+}
+
+.footer__list-logos {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  max-width: 18rem;
+  margin-right: 8px;
+}
+
+.footer__list-logos__item {
+  width: 5rem;
+  height: 2rem;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer pay logo */
+
+.footer__background__visa-png {
+  background-size: 1463.6363636363637% 983.3333333333334%;
+  background-position: 75.86666666666666% 6.289308176100629%;
+}
+
+.footer__background__mastercard-png {
+  background-size: 1463.6363636363637% 610.3448275862069%;
+  background-position: 51.2% 68.91891891891892%;
+}
+
+.footer__background__jcb-png {
+  background-size: 1463.6363636363637% 769.5652173913044%;
+  background-position: 51.2% 38.311688311688314%;
+}
+
+.footer__background__amex-png {
+  background-size: 1610% 804.5454545454545%;
+  background-position: 1.3245033112582782% 6.451612903225806%;
+}
+
+.footer__background__cod-png {
+  background-size: 1610% 610.3448275862069%;
+  background-position: 80.39735099337749% 32.432432432432435%;
+}
+
+.footer__background__installment-png {
+  background-size: 1463.6363636363637% 610.3448275862069%;
+  background-position: 80.93333333333334% 65.54054054054055%;
+}
+
+.footer__background__shopeepay-png {
+  background-size: 805% 931.578947368421%;
+  background-position: 63.687943262411345% 6.329113924050633%;
+}
+
+/* Footer Ship logo*/
+
+.footer__background__express-png {
+  background-size: 725.2252252252252% 983.3333333333334%;
+  background-position: 16.42651296829971% 82.38993710691824%;
+}
+
+.footer__background__ghtk-png {
+  background-size: 1463.6363636363637% 983.3333333333334%;
+  background-position: 34.266666666666666% 51.57232704402516%;
+}
+
+.footer__background__ghn-png {
+  background-size: 1463.6363636363637% 610.3448275862069%;
+  background-position: 24.266666666666666% 55.4054054054054%;
+}
+
+.footer__background__viettel_post-png {
+  background-size: 628.90625% 138.28125%;
+  background-position: 67.79911373707533% 100%;
+}
+
+.footer__background__vnpost-png {
+  background-size: 1463.6363636363637% 655.5555555555555%;
+  background-position: 100% 6.666666666666667%;
+}
+
+.footer__background__jnt-png {
+  background-size: 1463.6363636363637% 1106.25%;
+  background-position: 85.86666666666666% 6.211180124223603%;
+}
+
+.footer__background__grab_express-png {
+  background-size: 600.7462686567164% 610.3448275862069%;
+  background-position: 45.45454545454545% 6.756756756756757%;
+}
+
+.footer__background__ninja-van-png {
+  background-size: 1341.6666666666667% 680.7692307692307%;
+  background-position: 34.49664429530201% 79.47019867549669%;
+}
+
+.footer__background__best-express-png {
+  background-size: 865.5913978494624% 340.38461538461536%;
+  background-position: 26.96629213483146% 8%;
+}
+
+.footer__background__be-delivery-png {
+  background-size: 1118.0555555555557% 245.83333333333334%;
+  background-position: 12.278308321964529% 9.523809523809524%;
+}
+
+/* Footer contact */
+
+.footer__background__facebook-png {
+  background-size: 2515.625% 553.125%;
+  background-position: 1.2936610608020698% 35.86206896551724%;
+}
+
+.footer__background__instagram-png {
+  background-size: 2515.625% 553.125%;
+  background-position: 42.949547218628716% 40.689655172413794%;
+}
+
+.footer__background__linkedin-png {
+  background-size: 2515.625% 553.125%;
+  background-position: 8.020698576972833% 70.34482758620689%;
+}
+
+.footer__logos-block {
+  width: 19rem;
+}
+
+.footer__list-socials {
+
+}
+
+.footer__list-socials__item {
+  display: flex;
+}
+
+.footer__list-socials span {
+  display: block;
+  margin-left: 8px;
+  color: #8a8287;
+  font-size: 1.2rem;
+}
+
+.footer__qr-img {
+  height: 8.6rem;
+  border: 2px solid #efe9e9;
+}
+
+.footer__download {
+  display: flex;
+}
+
+.footer__download__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 8px;
 }
