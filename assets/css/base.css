@@ -68,8 +68,7 @@ ul {
   padding: 0;
 }
 
-.app__container {
-  margin-left: 4px !important;
+.container {
   margin-top: 120px;
   padding-bottom: 65px;
   background-color: #f5f5f5;

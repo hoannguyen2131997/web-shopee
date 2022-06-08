@@ -434,6 +434,8 @@
 
 .header-search__history {
   position: absolute;
+  height: 30vh;
+  overflow: hidden;
   left: 0;
   top: calc(100% + 4px);
   background: var(--white-color);
@@ -490,6 +492,9 @@
   border-radius: 2px;
   padding: 0;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header-search__main {
@@ -682,7 +687,7 @@
   right: -16px;
   box-shadow: 0 1px 8px #af9393;
   width: 68vh;
-  max-height: 56vh;
+  max-height: 40vh;
   background-color: var(--white-color);
   border-radius: 3px;
   display: none;
@@ -717,8 +722,14 @@
 .header-shop-selected-cart__content {
   display: flex;
   align-items: center;
-  padding: 4px 8px;
+  position: relative;
+  padding: 8px;
   height: 49px;
+}
+
+.header-shop-selected-cart__text {
+  position: absolute;
+  right: 6px;
 }
 
 .header-shop-selected-cart__list-contents {
@@ -740,7 +751,7 @@
 .header-shop__selected-cart {
   display: none;
   flex-direction: column;
-  max-height: 75vh;
+  max-height: 38vh;
 }
 
 .header-shop__selected-cart img {
@@ -1087,10 +1098,14 @@
   flex-wrap: wrap;
 }
 
+.home-product > .col {
+  margin: 2px 0;
+}
+
 .home-product__item {
   display: block;
   text-decoration: none;
-  height: 340px;
+  height: 98%;
   width: 100%;
   background-color: var(--white-color);
   position: relative;
@@ -1098,6 +1113,7 @@
   border-bottom-right-radius: 3px;
   box-shadow: 0 0.1rem 0.2rem 0 rgb(0 0 0 / 10%);
   transition: transform ease-in .2;
+  margin: 10px 0 20px;
 }
 
 .home-product__item:hover {
@@ -1106,13 +1122,14 @@
 }
 
 .home-product__item__img {
-  /* height: 50%;
-  width: 100%;
-  border: 0; */
   padding-top: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.home-product__item__content {
+  height: 44%;
 }
 
 .home-product-item__title {
@@ -1135,6 +1152,9 @@
   padding: 0 6px;
   height: 2rem;
   width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .home-product-item-offer__discount {
@@ -1224,7 +1244,7 @@
 
 .home-product-item__address {
   color: var(--text-color);
-  height: 8%;
+  height: 18%;
   display: flex;
   align-items: flex-end;
   margin-left: 6px;
@@ -1241,6 +1261,7 @@
   font-size: 1.2rem;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+  
 }
 
 .home-product__item__like span {
@@ -1313,7 +1334,7 @@
 
 .home-product__item__watch {
   position: absolute;
-  top: calc(50% - 1.3rem);
+  top: 50%;
   right: 0.45rem;
   height: 2rem;
   width: 2rem;

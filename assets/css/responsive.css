@@ -1,3 +1,11 @@
+/* PC */
+@media (min-width: 1024px) {
+  .home-product>.col {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
   .hide-on-mobile-tablet {
@@ -19,12 +27,49 @@
   .header-search__select {
     display: none;
   }
+
+  .header-shop__cart {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    padding: 0 calc((100% - 664px)/2);
+  }
+
+  .header-shop__cart::before {
+    display: none;
+  }
+
+  .header-shop__cart .header-shop__selected-cart {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: -16px;
+    box-shadow: 0 1px 8px #af9393;
+    width: 68vh;
+    max-height: 40vh;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+  }
+
+  .header-shop__selected-cart {
+    max-height: 30vh;
+  }
+
+  .header-shop-selected-cart__content span {
+    padding: 0 84px 0 28px;
+  }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1022px) {
   .hide-on-tablet {
     display: none;
+  }
+
+  .container {
+    margin-top: 88px;
   }
 
   .header-search__icon-list {
@@ -58,6 +103,18 @@
     width: 30px;
     height: 28px;
   }
+
+  .header-search__history {
+    width: calc(100% - 63px);
+  }
+
+  .home-product__item {
+    height: 97%;
+  }
+
+  .header-shop-selected-cart__text {
+    right: 16px;
+  }
 }
 
 /* Mobile */
@@ -67,7 +124,7 @@
   }
 
   .pd-0-mobile {
-    padding-top: 0!important;
+    padding-top: 0 !important;
   }
 
   .header {
@@ -91,7 +148,7 @@
     height: 40px;
     position: relative;
     right: 10px;
-    width: 205px;
+    width: 86px;
     order: 2;
   }
 
@@ -101,8 +158,8 @@
   }
 
   .header__search {
-      order: 1;
-      margin-right: 20px;
+    order: 1;
+    margin-right: 20px;
   }
 
   .header-shop-cart__user {
@@ -137,7 +194,7 @@
     left: 0;
     top: 8px;
   }
-  
+
   .header-search__button i {
     color: #7e7b7b;
     font-size: 1.2rem;
@@ -149,8 +206,34 @@
     padding: 0 1.425rem;
     margin-left: 16px;
   }
-  
+
   .header-search__item-top {
     height: 34px;
+  }
+
+  .header-search__history {
+    width: 100%;
+  }
+
+  .home-product__item {
+    height: 97%;
+  }
+
+  .header-shop__cart {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .home-product__item {
+    height: 99%;
+  }
+
+  .home-product-item__address {
+    height: 22%;
+  }
+  .home-product {
+    margin: 0;
   }
 }
