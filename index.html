@@ -177,9 +177,35 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="header-search__icon-list">
-                        <i class="fas fa-list"></i>
+                    <div class="header-search__list">
+                        <img class="header-search__list__icon" src="./assets/img/list.png" alt="">
+
+                        <div class="header-search__list__content">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-magnifying-glass"></i>
+                                    <span>Tìm kiếm sản phẩm theo danh mục</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-hand-holding-dollar"></i>
+                                    <span>Các chương trình khuyến mãi</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-gift"></i>
+                                    <span>Đổi điểm nhận quà</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-percent"></i>
+                                    <span>Nhận mã giảm giá</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-angle-down"></i>
+                                    <span>Xem thêm</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="header__search">
                         <div class="header-search__main">
                             <div class="header-search__item-top">
@@ -248,7 +274,7 @@
 
                         </div>
                     </div>
-                   
+
                     <div class="header-shop-cart">
                         <div class="header-shop-cart__icon">
                             <i class="fas fa-cart-shopping"></i>
@@ -348,8 +374,9 @@
                     </div>
 
                 </div>
-
             </div>
+
+
         </div>
 
         <div class="container">
@@ -361,24 +388,24 @@
                                 <i class="fas fa-list"></i>
                                 Bộ lọc tìm kiếm
                             </h3>
-    
+
                             <ul class="category-list">
                                 <li class="category-item">
                                     <a href="#" class="category-item__link">Máy Tính & Laptop</a>
                                 </li>
-    
+
                                 <li class="category-item">
                                     <a href="#" class="category-item__link category-item__link--active">Máy Tính Bàn</a>
                                 </li>
-    
+
                                 <li class="category-item">
                                     <a href="#" class="category-item__link">Màn Hình</a>
                                 </li>
-    
+
                                 <li class="category-item">
                                     <a href="#" class="category-item__link">Linh Kiện Máy Tính</a>
                                 </li>
-    
+
                                 <li class="category-item">
                                     <a href="#" class="category-item__link">Thiết Bị Lưu Trữ</a>
                                 </li>
@@ -402,7 +429,7 @@
                                     class="btn btn-size-m btn--normal pd-12 border-shadow--light home-title__selecte__item">
                                     <span>Giá</span>
                                     <i class="fa-solid fa-angle-down"></i>
-    
+
                                     <div class="home-title__selecte__price border-shadow--light">
                                         <span>Giá: thấp đến cao</span>
                                         <span>Giá: cao đến thấp</span>
@@ -419,28 +446,118 @@
                                     class="btn btn-size-xs btn--disabled home-title__mini-page-controller__prev-btn border-shadow--none">
                                     <i class="fa-solid fa-angle-left"></i>
                                 </div>
-                                <div class="btn btn-size-xs home-title__mini-page-controller__next-btn border-shadow--none">
+                                <div
+                                    class="btn btn-size-xs home-title__mini-page-controller__next-btn border-shadow--none">
                                     <i class="fa-solid fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="home-product">
-    
+
+                            <div class="home-product__header-item">
+                                <h1>Danh mục</h1>
+
+                                <div class="home-product__header-item__more">
+                                    <span>Xem thêm</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="home-product__list">
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item1.png" alt="">
+                                    <span>Thời Trang Nam</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item2.png" alt="">
+                                    <span>Điện Thoại & Phụ Kiện</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item3.png" alt="">
+                                    <span>Thiết Bị Điện Tử</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item4.png" alt="">
+                                    <span>Máy Tính & Laptop</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item5.png" alt="">
+                                    <span>Máy Ảnh & Máy Quay Phim</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item6.png" alt="">
+                                    <span>Thời Trang Nữ</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item7.png" alt="">
+                                    <span>Mẹ & Bé</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item8.png" alt="">
+                                    <span>Nhà Cửa & Đời Sống</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item9.png" alt="">
+                                    <span>Sắc Đẹp</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item10.png" alt="">
+                                    <span>Sức Khỏe</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item11.png" alt="">
+                                    <span>Đồng hồ</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item12.png" alt="">
+                                    <span>Giày Dép Nam</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item13.png" alt="">
+                                    <span>Giày Dép Nữ</span>
+                                </a>
+                                <a class="home-product__list__item">
+                                    <img src="./assets/img/list-item/item14.png" alt="">
+                                    <span>Túi Ví Nữ</span>
+                                </a>
+                            </div>
+
+                            <div class="home-product__header-item">
+                                <h1>Gợi ý hôm nay</h1>
+                                <div class="home-product__header-item__more">
+                                    <span>Xem thêm</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
+
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/e2d534d134a604cbe73c84cc2db24350_tn)">
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
+
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">Quần áo phòng dịch đi máy bay chất dày dặn, bộ
+                                        <p class="home-product-item__title">Quần áo phòng dịch đi máy bay chất dày dặn,
+                                            bộ
                                             đồ bảo hộ phòng dịch đã kiểm định </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <div class="home-product-item-offer__discount">75.000₫ lúc 12:00</div>
                                             <div class="home-product-item-offer__voucher">Giảm ₫10k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable">₫34.000</span>
@@ -449,12 +566,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -469,7 +587,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -480,10 +598,10 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 12,3k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-                                  
+
                                     <div class="home-product__item__mall">
                                         <span>Mall</span>
                                     </div>
@@ -491,37 +609,38 @@
                                         <span>47%</span>
                                         <span>Giảm</span>
                                     </div>
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
-                                    </div>
                                 </a>
                             </div>
-    
-    
-    
+
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/144651b22ec14ba06b3d53283f965ae9_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè Form
+                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè
+                                            Form
                                             Rộng Cổ Tròn In Chữ WANTED Zenkonu TOP NAM 1000193 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable"></span>
@@ -530,12 +649,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -550,7 +670,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -561,10 +681,10 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 42,7k</div>
                                         </div>
-        
-                                        <div class="home-product-item__address">TP. Hồ Chí Minh</div>    
+
+                                        <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-                                   
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
@@ -572,37 +692,36 @@
                                         <span>40%</span>
                                         <span>Giảm</span>
                                     </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
-                                    </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/4b8d4460d3002baf7a6dd4027cd7c57d_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    
+
                                     <div class="home-product__item__content">
                                         <p class="home-product-item__title">Áo Choàng Cosplay Nhân Vật Eren Levi Mikasa
                                             Trong Attack On Titan </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <div class="home-product-item-offer__discount">75.000₫ lúc 11:00</div>
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable">₫304.000</span>
@@ -611,12 +730,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -631,7 +751,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -642,30 +762,18 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 20,7k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">Hà Nội</div>
                                     </div>
-                                    
+
                                     <div class="home-product__item__discount">
                                         <span>50%</span>
                                         <span>Giảm</span>
                                     </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
-                                    </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
@@ -673,14 +781,15 @@
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">COMBO 2 Đôi Tất Trơn Unisex Nam Nữ Cổ Ngắn R.M
+                                        <p class="home-product-item__title">COMBO 2 Đôi Tất Trơn Unisex Nam Nữ Cổ Ngắn
+                                            R.M
                                             Menswear </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <div class="home-product-item-offer__voucher">Giảm ₫100k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable">₫134.000</span>
@@ -689,12 +798,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -709,7 +819,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -720,14 +830,14 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 103,3k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-                                   
+
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
@@ -735,14 +845,15 @@
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">Tất nam nữ cổ ngắn hàn quốc cao cấp PATOMI, vớ
+                                        <p class="home-product-item__title">Tất nam nữ cổ ngắn hàn quốc cao cấp PATOMI,
+                                            vớ
                                             nữ nam cao cấp kháng khuẩn khử mùi- HT064 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <div class="home-product-item-offer__discount">75.000₫ lúc 11:00</div>
                                             <div class="home-product-item-offer__voucher">Giảm ₫100k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable">₫434.000</span>
@@ -751,12 +862,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -771,7 +883,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -782,10 +894,10 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 20,3k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">Hà Nội</div>
                                     </div>
-                                 
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
@@ -795,23 +907,35 @@
                                     </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/144651b22ec14ba06b3d53283f965ae9_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè Form
+                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè
+                                            Form
                                             Rộng Cổ Tròn In Chữ WANTED Zenkonu TOP NAM 1000193 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable"></span>
@@ -820,12 +944,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -840,7 +965,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -851,48 +976,48 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 42,7k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-    
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
                                     <div class="home-product__item__discount">
                                         <span>40%</span>
                                         <span>Giảm</span>
-                                    </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
                                     </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/144651b22ec14ba06b3d53283f965ae9_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè Form
+                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè
+                                            Form
                                             Rộng Cổ Tròn In Chữ WANTED Zenkonu TOP NAM 1000193 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable"></span>
@@ -901,12 +1026,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -921,7 +1047,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -932,49 +1058,49 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 42,7k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-                                  
-    
+
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
                                     <div class="home-product__item__discount">
                                         <span>40%</span>
                                         <span>Giảm</span>
-                                    </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
                                     </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/144651b22ec14ba06b3d53283f965ae9_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè Form
+                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè
+                                            Form
                                             Rộng Cổ Tròn In Chữ WANTED Zenkonu TOP NAM 1000193 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable"></span>
@@ -983,12 +1109,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -1003,7 +1130,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -1014,48 +1141,48 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 42,7k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">TP. Hồ Chí Minh</div>
-                                    </div>                                  
-    
+                                    </div>
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
                                     <div class="home-product__item__discount">
                                         <span>40%</span>
                                         <span>Giảm</span>
-                                    </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
                                     </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/144651b22ec14ba06b3d53283f965ae9_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè Form
+                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè
+                                            Form
                                             Rộng Cổ Tròn In Chữ WANTED Zenkonu TOP NAM 1000193 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable"></span>
@@ -1064,12 +1191,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -1084,7 +1212,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -1095,48 +1223,48 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 42,7k</div>
                                         </div>
-        
-                                        <div class="home-product-item__address">TP. Hồ Chí Minh</div>    
+
+                                        <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-                                   
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
                                     <div class="home-product__item__discount">
                                         <span>40%</span>
                                         <span>Giảm</span>
-                                    </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
                                     </div>
                                 </a>
                             </div>
-    
-    
+
+
                             <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product__item" href="#">
                                     <div class="home-product__item__img"
                                         style="background-image: url(https://cf.shopee.vn/file/144651b22ec14ba06b3d53283f965ae9_tn)">
+
+                                        <div class="home-product__item__watch">
+                                            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                                                <path
+                                                    d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
+                                                    clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
+                                                <path
+                                                    d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
                                     </div>
 
                                     <div class="home-product__item__content">
-                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè Form
+                                        <p class="home-product-item__title">[Mẫu Mới] Áo Dài Tay Nam Nữ Unisex Mùa Hè
+                                            Form
                                             Rộng Cổ Tròn In Chữ WANTED Zenkonu TOP NAM 1000193 </p>
-        
+
                                         <div class="home-product-item__offer">
                                             <!-- <div class="home-product-item-offer__discount"></div> -->
                                             <!-- <div class="home-product-item-offer__voucher"></div> -->
                                         </div>
-        
+
                                         <div class="home-product-item__price">
                                             <div class="home-product-item__price__change">
                                                 <span class="home-product-item__price__disable"></span>
@@ -1145,12 +1273,13 @@
                                             <svg height="12" viewBox="0 0 20 12" width="20"
                                                 class="home-product-item__price__ship">
                                                 <g fill="none" fill-rule="evenodd" transform="">
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4">
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1"
+                                                        width="12" x="4">
                                                     </rect>
                                                     <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5">
                                                     </rect>
-                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13"
-                                                        y="2"></rect>
+                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7"
+                                                        x="13" y="2"></rect>
                                                     <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5">
                                                     </rect>
                                                     <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
@@ -1165,7 +1294,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-        
+
                                         <div class="home-product-item__statistical">
                                             <div class="home-product-item__statistical__rating">
                                                 <i class="home-product-item__statistical__rating--gold fas fa-star"></i>
@@ -1176,38 +1305,27 @@
                                             </div>
                                             <div class="home-product-item__statistical__sold">Đã bán 42,7k</div>
                                         </div>
-        
+
                                         <div class="home-product-item__address">TP. Hồ Chí Minh</div>
                                     </div>
-    
+
                                     <div class="home-product__item__like">
                                         <span>Yêu thích</span>
                                     </div>
                                     <div class="home-product__item__discount">
                                         <span>40%</span>
                                         <span>Giảm</span>
-                                    </div>
-    
-                                    <div class="home-product__item__watch">
-                                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20"
-                                            class="shopee-svg-icon W1KwtX icon-video-play2">
-                                            <path
-                                                d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                clip-rule="evenodd" fill-opacity=".5" fill-rule="evenodd"></path>
-                                            <path
-                                                d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                fill="#fff"></path>
-                                        </svg>
                                     </div>
                                 </a>
                             </div>
                         </div>
-    
+
                         <div class="hide-on-mobile home-page-contronller mt-12">
                             <button class="btn-no-outline--solid"><i class="fas fa-angle-left"></i></button>
-    
+
                             <div class="home-page-contronller__list">
-                                <button class="btn-no-outline btn--primary btn- home-page-contronller__list_item">1</button>
+                                <button
+                                    class="btn-no-outline btn--primary btn- home-page-contronller__list_item">1</button>
                                 <button class="btn-no-outline home-page-contronller__list_item">2</button>
                                 <button class="btn-no-outline home-page-contronller__list_item">3</button>
                                 <button class="btn-no-outline home-page-contronller__list_item">4</button>
@@ -1352,14 +1470,15 @@
                     </div>
                     <div class="hide-on-mobile-tablet col l-2-4">
                         <h3>TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
-    
+
                         <div class="footer__download mt-32">
                             <img src="/assets/img/qr_code.png" alt="QR Code" class="footer__qr-img" />
-    
+
                             <div class="footer__download__list">
                                 <img src="/assets/img/google_play.png" alt="Google Play"
                                     style="width: 8rem; height: 2rem" />
-                                <img src="/assets/img/app_store.png" alt="App Store" style="width: 8rem; height: 1.7rem" />
+                                <img src="/assets/img/app_store.png" alt="App Store"
+                                    style="width: 8rem; height: 1.7rem" />
                                 <img src="/assets/img//app_gallery.png" alt="App Gallery"
                                     style="width: 8rem; height: 1.6rem" />
                             </div>

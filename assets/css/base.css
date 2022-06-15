@@ -4,6 +4,11 @@
   --black-color: #000;
   --text-color: #333;
   --star-color: #ffce3d;
+
+  --width-tablet: 664px;
+  --height-header-tablet: 88px;
+  --height-header-mobile-tablet: 88px;
+  --height-header-mobile: 60px;
 }
 
 * {
@@ -24,6 +29,10 @@ html {
 
 p {
   font-size: 1.6rem;
+}
+
+.app {
+  overflow: hidden;
 }
 
 /* Responsive */
@@ -80,15 +89,15 @@ ul {
 }
 
 .mt-0 {
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
 .mt-1 {
-  margin-top: 1px!important;
+  margin-top: 1px !important;
 }
 
 .mt-32 {
-  margin-top: 32px!important;
+  margin-top: 32px !important;
 }
 
 .mt-8 {
@@ -100,32 +109,34 @@ ul {
 }
 
 .mr-8 {
-  margin-right: 8px!important;
+  margin-right: 8px !important;
 }
 
 .ml-6 {
-  margin-left: 6px!important;
+  margin-left: 6px !important;
 }
 
 .ml-4 {
-  margin-left: 4px!important;
+  margin-left: 4px !important;
 }
 
 .pt-12 {
-  padding-top: 12px!important;
+  padding-top: 12px !important;
 }
 
 .pd-4 {
-  padding: 4px!important;
+  padding: 4px !important;
 }
 
 .pd-12 {
-  padding: 12px!important;
+  padding: 12px !important;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -135,6 +146,7 @@ ul {
   from {
     transform: scale(var(--growth-from));
   }
+
   to {
     transform: scale(var(--growth-to));
   }
@@ -172,8 +184,7 @@ ul {
   animation: growth linear .1s;
 }
 
-.model__inner {
-}
+.model__inner {}
 
 /* Button style */
 
@@ -184,7 +195,7 @@ ul {
   cursor: pointer;
   box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
   color: var(--text-color);
-  border: 1px solid rgba(0,0,0,.09);
+  border: 1px solid rgba(0, 0, 0, .09);
 }
 
 .btn-full-width {
@@ -253,7 +264,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-.grid_sv + .grid_sv {
+.grid_sv+.grid_sv {
   margin-left: 10px;
 }
 
@@ -269,7 +280,7 @@ ul {
 
 .btn.btn--disabled {
   cursor: default;
-  color: rgba(0,0,0,.26);
+  color: rgba(0, 0, 0, .26);
   background-color: #f9f9f9;
 }
 
@@ -292,7 +303,7 @@ ul {
   outline-color: #757575;
 }
 
-.input + .input {
+.input+.input {
   margin-top: 25px;
 }
 
@@ -318,12 +329,10 @@ ul {
 }
 
 /* border shadow */
-.border-shadow--dark {
-
-}
+.border-shadow--dark {}
 
 .border-shadow--light {
-  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 2%)!important;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 2%) !important;
 }
 
 .border-shadow--none {
